@@ -1,7 +1,9 @@
+
 body {
 	font-family: 'Open Sans', sans-serif;
 
 	background-color: #f5f9fc;
+
 	padding-top: 100px;
 
 	padding: 50px;
@@ -25,12 +27,15 @@ body {
 		color: #7a92a5;
 		font-size: 12px;
 		margin: 12px 5px;
+		// display: inline-block;
 	}
 
 	.darkResults{
 		color: #c8dcec;
 		font-size: 12px;
 		margin: 12px 5px;
+		// display: inline-block;
+
 	}
 
 	header {
@@ -71,14 +76,25 @@ body {
 		font-size: 12px;
 	}
 
+	.button{
+		// margin-bottom: 10px;
+		margin-left:955px;
+		font-family: 'Open Sans', sans-serif;
+		border-radius: 4px;
+		font-weight: 700;
+		box-shadow: 0 2px 6px 1px #e1e5e8;
+	}
+
 	.darkButton {
 		background-color: black;
 		color: white;
+		border: 1.5px solid lightgrey;
 	}
 
 	.lightButton {
 		background-color: white;
 		color: black;
+		border: 1.5px solid grey;
 	}
 
 	.darkSearch{
@@ -90,6 +106,42 @@ body {
 		background-color: black;
 		color: white;
 	}
+
+	.sort-h{
+		font-weight: 400;
+		font-family: 'Open Sans', sans-serif;
+		color:  #7a92a5;
+		// margin-left: 793px;
+		// display: inline-block;
+
+	}
+
+	.sortButton{
+		color:  #7a92a5;
+		background-color: white;
+		border-radius: 4px;
+		margin-left: 5px;
+		box-shadow: 0 2px 6px 1px lightgrey;
+		border: 2px  lightgrey;
+	}
+
+	.sortButton:focus{
+		box-shadow: none;
+		background-color: lightcyan;
+	}
+
+	.darkSort{
+		background-color: black;
+		color: white;
+		border: 2px lightgray;
+	}
+
+	.darkSort:focus{
+		box-shadow: none;
+		background-color: lightcyan;
+		color:darkgray;
+	}
+
 
 	.tickets {
 

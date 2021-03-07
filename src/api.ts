@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {APIRootPath} from '@fed-exam/config';
+import { APIRootPath } from '@fed-exam/config';
 
 export type Ticket = {
     id: string,
@@ -11,13 +11,13 @@ export type Ticket = {
 }
 
 export type ApiClient = {
-    getTickets: () => Promise<Ticket[]>;
+    getTickets: (sortBy: string, page: number) => Promise<Ticket[]>;
 }
 
 export const createApiClient = (): ApiClient => {
     return {
-        getTickets: () => {
-            return axios.get(APIRootPath).then((res) => res.data);
+        getTickets: (sortBy: string, page: number) => {
+            return axios.get(APIRootPath, { params: { sortBy: sortBy, page: page } }).then((res) => res.data);
         }
     }
 }
